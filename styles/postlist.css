@@ -134,7 +134,7 @@
 /* Media query for even smaller screens */
 @media screen and (max-width: 480px) {
     .post-card {
-        width: calc(100% - 30px); /* Single post per row with a margin of 15px */
+        width: calc(100% - 30px); 
         margin: 15px;
     }
 }
