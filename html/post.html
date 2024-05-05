@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Blog Post</title> -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+       
+        <div class="header">
+            <div class="headcontainer">
+               <div class="headerlogo">
+                <p class="title">ScriBBler</p>
+                <p class="subheading">Explore, Imagine, Create</p>
+               </div>
+                <div class="buttons">
+                    <button id="signup" class="btn btn-signup">Sign Up</button>
+                    <button id="signin" class="btn btn-signin">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-title">
+                <h1 id="postTitle" class="post-title"></h1>
+            </div>
+            <div class="contents-post">
+                <p id="author" class="post-author"></p>
+            <button id="editButton" class="edit-btn"> Edit
+                <i class="fa-solid fa-pen-to-square"></i></button>
+                <button id="saveButton" class="save-btn">Save <i class="fa-solid fa-floppy-disk"></i></button>
+            </div>
+            <div id="postContent" class="post-content "></div>
+            <button id="likeButton" class="like-btn"> <i class="fa fa-thumbs-up"></i></i> Like</button>
+            <p class="likemsg" id="likeMessage">Be the first one to like this!</p>
+            <!-- <input type="text" id="commentInput" placeholder="Leave a comment..."> -->
+            <textarea class="comment-text" id="commentInput" name="commentInput" placeholder="Leave a comment..." style="height:100px"></textarea>
+            <button id="commentButton" class="comment-btn">Comment</button>
+            <p><b>All Comments</b></p>
+            <div id="allComments" class="comments-section">
+                <!-- All comments will be dynamically added here -->
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="mymodal" class="signupmodal">
+                        
+        <form action="" class="modal-content">
+            <div class="form-container">
+                <span class="close">&times;</span>
+                <h1>Get Started</h1>
+                <hr>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter your name" id="name" name="name" required autocomplete="name">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter your username" id="username" name="username" required autocomplete="username">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter your Password" id="psw" name="psw" required autocomplete="new-password">
+                <label for="psw-repeat"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Re-enter your Password" id="psw-repeat" name="psw-repeat" required autocomplete="new-password">
+                
+                    <button type="submit" class="submitbtn">Sign Up</button>
+                
+            </div>
+        </form>
+    </div>
+
+    <div id="mymodal1" class="signinmodal">
+        <form action="" class="modal-content">
+            <div class="form-container">
+                <span class="close">&times;</span>
+                <h1>Welcome Back!</h1>
+                <hr>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter your username" id="username" name="username" required autocomplete="username">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter your Password" id="psw" name="psw" required autocomplete="new-password">
+                <button type="submit" class="submitbtn">Sign In</button>
+                <p class="not-mem">Not a member <a href="#" style="color:dodgerblue">Sign Up</a></p>
+            </div>
+        </form>
+     </div>
+
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>

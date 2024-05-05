@@ -1,0 +1,111 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-container{
+    padding: 80px 150px;
+    justify-content: center;
+}
+
+/* Center the post title */
+.post-title {
+    text-align: center;
+}
+
+.contents-post {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    padding:  20px 0;
+    
+}
+
+/* Style the "Edit" button */
+.edit-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1.5 em;
+    cursor: pointer;
+}
+
+.save-btn {
+    display: none; /* Initially hide the save button */
+    background-color: red; /* Pink color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1.5 em;
+    cursor: pointer;
+}
+
+.post-title[contenteditable="true"]:hover,
+.post-content[contenteditable="true"]:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+.like-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.5 em;
+}
+
+.comments-section {
+    background-color:#dddcdc;/*light gray */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.post-author{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-style: normal;
+}
+.post-content{
+    justify-content: center;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.comment {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
+}
+.likemsg{
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.comment-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+     margin-bottom: 15px; 
+}
+.comment-text{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0  0;
+    display: inline-block;
+    border: 5px;
+    background: #f1f1f1;
+    border-color: black;
+}

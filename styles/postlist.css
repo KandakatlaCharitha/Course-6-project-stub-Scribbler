@@ -1,0 +1,124 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;/*the added padding or border doesnot depend on content*/
+}
+
+.post-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.post-card{
+    width: calc(40% - 20px); /* Two posts per row with a margin of 20px */
+    margin: 25px;
+   /* width: 600px;*/
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    min-height: 120px;
+    background-color: rgb(189, 188, 188);
+    position: relative;
+    font-family:'Times New Roman', Times, serif ;
+
+}
+
+
+.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fa-ellipsis-h {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Box shadow on hover */
+.post-card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+.post-user{
+   height: 100%;
+   width:85px;
+   background-color: white;
+    float: left;
+    text-align: center;
+    padding: 35px 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.post-heading{
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+.post-text{
+    margin: 5px;
+    text-align:center;
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+
+}
+
+.deletemodal{
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+.modalcon{
+    background-color: #fefefe;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust the width of the modal as needed */
+    max-width: 400px; /* Set a maximum width to prevent the modal from becoming too wide */
+  
+    position: absolute;
+    top: 50%; /* Position the modal 50% from the top of the page */
+    left: 50%; /* Position the modal 50% from the left of the page */
+    transform: translate(-50%, -50%); /* Center the modal both horizontally and vertically */
+}
+
+.btn-yes{
+    padding: 14px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    float: left;
+}
+.btn-no{
+    padding: 14px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    float: right;
+}
+.delete-p{
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-align: center;
+}
