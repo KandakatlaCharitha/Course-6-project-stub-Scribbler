@@ -122,3 +122,19 @@
     font-weight:bold;
     text-align: center;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .post-card {
+        width: calc(50% - 30px); /* Two posts per row with a margin of 15px */
+        margin: 15px;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .post-card {
+        width: calc(100% - 30px); /* Single post per row with a margin of 15px */
+        margin: 15px;
+    }
+}
