@@ -109,3 +109,40 @@
     background: #f1f1f1;
     border-color: black;
 }
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+    .post-container {
+        padding: 20px; /* Reduce padding for better spacing on mobile */
+    }
+
+    .post-card {
+        width: calc(100% - 40px); /* Make post cards take up full width on mobile with some margin */
+        margin: 20px auto; /* Center post cards horizontally */
+    }
+
+    .post-user {
+        width: 100%; /* Make post user section take up full width */
+        padding: 20px 0; /* Add vertical padding for better spacing */
+        text-align: center; /* Center post user information */
+    }
+
+    .post-content {
+        padding: 20px; /* Add padding for better readability */
+    }
+
+    .delete,
+    .fa-ellipsis-h {
+        top: 20px; /* Adjust icon positions for better alignment */
+        right: 20px;
+    }
+
+    .comment-text {
+        width: calc(100% - 40px); /* Make comment input take up full width with some margin */
+        margin: 20px auto; /* Center comment input horizontally */
+    }
+
+    .comment-btn {
+        margin-top: 20px; /* Add space between comment input and button */
+    }
+}
